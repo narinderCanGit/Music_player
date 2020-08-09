@@ -1,0 +1,680 @@
+body
+{
+    background-color:rgb(13,16,42);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color:white;
+}
+
+.super-container{
+	box-sizing:border-box;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	padding: 0 10px;
+        margin-top:10px;
+       justify-content: space-between;
+}
+
+/* -------------------NAV-BAR----------------------------------- */
+
+.navbar{
+	width:100%;
+	height:auto;
+	background-color:rgb(16,26,40);
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.nav-icon{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+#nav-text{
+	font-size:1.5rem;	
+}
+
+input{
+	height:20px;
+	background-color:rgb(16,26,50);
+	color:white;
+}
+
+input:focus, textarea:focus, select:focus{            /*to make outline transparent*/
+        outline: none;
+    }
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin:0px 10px 10px 0px;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.mt-10px{
+	margin-top:-10px;
+}
+
+
+/* -------------------MAIN----------------------------------- */
+
+main{
+	width:70%;
+	height:auto;
+	//border:1px solid white;
+	margin:20px 10px 10px 20px;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:space-between;
+	//transition: all 0.8s ease-in-out;
+}
+
+.container{
+	box-sizing:border-box;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	padding: 0 10px;
+        margin-top:10px;
+	margin-bottom:-30px;
+       justify-content: space-around;
+}
+
+.container-bg{
+	background-color:rgb(16,26,64);
+	box-sizing:border-box;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	padding: 0 10px;
+        margin-top:10px;
+	margin-bottom:-30px;
+       justify-content: space-around;
+}
+
+/*-----------------------------------genre-----------*/
+
+.genre_img{
+	height:150px;
+	width:150px;
+	overflow: hidden;
+   	 margin: 10px;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+   	 position: relative;	
+}
+
+.shadow{
+	 box-shadow: 1px 1px 10px 2px lightgrey;
+
+}
+
+.genre-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.genre_img:hover {
+    box-shadow: 0 0 20px #74ADC8;
+    transition:1s ease-in-out;
+    transform:scale(1.2);
+}
+
+.genre_img:hover .genre-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/* ---------------latest_releases------------- */
+
+.release_img img{
+	height:100px;
+	width:100px;
+}
+
+.release_img{
+	height:100px;
+	width:100px;
+   	margin: 10px;
+   	position: relative;	
+}
+
+.section-heading {
+    width: auto;
+    padding: 10px 10px 10px;
+    font-weight: 200;
+    margin-bottom:-20px;
+}
+
+.section-heading span {
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.release-details {
+    position: absolute;
+    top: 77px;
+    left: -10px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size:0.8rem;
+}
+
+
+/* ---------------Artist/Albums------------- */
+
+.artist_img img{
+	height:100px;
+	width:100px;
+}
+
+.artist_img{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	overflow: hidden;
+   	margin: 10px;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+   	position: relative;	
+}
+
+.artist-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    width:100%;
+    height: 100%;
+    color: transparent;
+    text-align: left;
+    padding: 10px;
+    font-size:1.5rem;
+}
+
+.artist_img:hover .artist-details {
+    background-color: #80808078;
+    color: white;
+}
+
+
+/* -------------------Aside----------------------------------- */
+
+aside{
+	width:22%;
+	height:auto;
+	//border:1px solid white;
+	margin:20px 10px 10px 20px;
+	display:block;
+	//flex-wrap:wrap;
+	//flex-direction:column;
+	//justify-content:space-between;
+	//background-color:rgb(16,26,64);
+}
+
+.aside-heading{
+	width: auto;
+    padding: 10px 10px 10px;
+    font-weight: 200;
+	margin-top:0px;
+    margin-bottom:0px;
+}
+
+.queue_img img{
+	height:40px;
+	width:40px;
+	
+}
+
+.queue_img{
+	//height:40px;
+	//width:40px;
+   	margin:10px;
+        position: relative;
+	//background-color:rgb(16,26,64);	
+}
+
+.queue_img:nth-child(2n){
+	background-color:rgb(10,15,30);	
+}
+
+.queue_img:nth-child(2n+1){
+	background-color:rgb(16,26,64);	
+}
+
+.queue-details {
+    position: absolute;
+    top:-10px;
+    left: 45px;
+    color: white;
+    text-align:left;
+    padding: 10px;
+    font-size:0.7rem;
+}
+
+span i{
+    color: white !important;
+}
+
+.heart{
+	 position: absolute;
+   	 top:0px;
+    	 right: 10px;
+}
+
+.dots{
+	 position: absolute;
+   	 top: 0px;
+    	 right: 50px;
+}
+
+/*----------------------second page---------------------------*/
+
+/* ---------------Card------------- */
+
+.card{
+	//width:90%;
+	height:auto;
+	display:flex;
+	//flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-between;
+	background-color:rgb(16,26,64);
+}
+
+.card img{
+	margin-left:1px;
+	height:auto;
+	//border-radius:0 0 20% 20%;
+	opacity: 0.7;
+	
+}
+
+.text{
+	margin-left:20px;
+}
+
+.card-title{
+	margin-top:20px;
+	font-weight:200;
+}
+
+.card-title-bottom{
+	font-size:0.7rem;
+	margin-top:-35px;
+}
+
+.card-text{
+	font-size:0.7rem;
+}
+
+#playAll{
+	background-image:linear-gradient(to right,purple,pink);
+	//color:white;
+}
+
+/*----------------------------second list-------------*/
+
+.second-list{
+	margin-top:40px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;	
+}
+
+.second-list-2{
+	margin-top:-30px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;	
+}
+
+.second_img img{
+	height:50px;
+	width:50px;	
+}
+
+.second_img{
+	//height:50px;
+	//width:50px;
+   	margin:10px;
+        position: relative;
+	background-color:rgb(10,15,30);	
+}
+
+.second_img:hover{
+	//box-shadow: 0 0 20px #74ADC8;
+    transition:1s ease-in-out;
+    transform:scale(1.05);
+	box-shadow: 1px 1px 5px 2px lightgrey;
+}
+
+.second-details {
+    position: absolute;
+    top:-10px;
+    left: 45px;
+    color: white;
+    text-align:left;
+    padding: 10px;
+    font-size:0.9rem;
+    margin-top:10px;
+}
+
+span i{
+    color: white !important;
+}
+
+.heart{
+	 position: absolute;
+   	 top:10px;
+    	 right: 10px;
+}
+
+.dots{
+	 position: absolute;
+   	 top: 10px;
+    	 right: 50px;
+}
+
+.plus{
+	 position: absolute;
+   	 top: 10px;
+    	 right:90px;
+}
+
+.time{
+	position: absolute;
+   	 top: 15px;
+    	 left:350px;
+	font-size:0.9rem;
+}
+
+/*----------------------------similar artists-------------*/
+
+.similar_artist_img{
+	margin:10px;
+        position: relative;
+	background-color:rgb(10,15,30);
+}
+
+.similar_artist_img img{
+	width:80px;
+	height:80px;
+}
+
+.similar-artists-details {
+    position: absolute;
+    top:-10px;
+    left: 85px;
+    color: white;
+    text-align:left;
+    padding: 10px;
+    font-size:0.8rem;
+    margin-top:10px;
+}
+
+.dot{
+	 position: absolute;
+   	 top:0px;
+    	 right:10px;
+}
+
+.similar_artist_img:nth-child(2n){
+	background-color:rgb(10,15,30);	
+}
+
+.similar_artist_img:nth-child(2n+1){
+	background-color:rgb(16,26,64);	
+}
+
+/*-------------------------recently played-----------------*/
+
+.mt-70px{
+	margin-top:70px;
+}
+
+/*-----------------------------Rock-Music List-------*/
+
+.genre-heading{
+    width: auto;
+    padding: 10px 10px 10px;
+    font-weight: 300;
+    margin-top:-10px;
+    margin-bottom:-40px;
+}
+
+
+/*---------------------------footer-----------------*/
+
+footer{
+	width:100%;
+	height:auto;
+	background-color:rgb(16,26,40);
+	position:sticky;
+	bottom:0;
+	margin-top:70px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.footer-img{
+	margin:10px;
+        position: relative;
+	width:50px;
+	height:50px;
+}
+
+.footer-img-details{
+    position: absolute;
+    top:-10px;
+    left: 55px;
+    color: white;
+    text-align:left;
+    padding: 10px;
+    font-size:0.8rem;
+    margin-top:10px;
+}
+
+.footer-one-heart{
+	position: absolute;
+    top:10px;
+    left: 140px;
+}
+
+.ml-10px{
+	margin-left:20px;
+}
+
+/*---------------------music controller------------------*/
+
+#footer-two{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	
+}
+
+.line{
+	width:80px;
+	border:2px solid green;
+	display:inline-block;
+	margin-right:-7px;
+}
+
+.line2{
+	width:200px;
+	border:2px solid rgb(16,26,70);
+	display:inline-block;
+	margin-left:-7px;
+}
+
+.circle{
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	background-color:white;
+	display:inline-block;
+	margin-bottom:-3px;
+	//margin-left:30px;
+	//z-index:2;
+}
+
+.footer-time{
+	font-size:0.8rem;
+}
+
+/*------------------------volume--------------------*/
+
+#footer-three{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	margin-right:10px;	
+}
+
+.vol-line{
+	width:40px;
+	border:2px solid green;
+	display:inline-block;
+	margin-right:-7px;
+}
+
+.vol-line2{
+	width:70px;
+	border:2px solid rgb(16,26,70);
+	display:inline-block;
+	margin-left:-7px;
+}
+
+.vol-circle{
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	background-color:white;
+	display:inline-block;
+	margin-bottom:-3px;
+}
+
+
+/*------------------------------responsiveness---------------*/
+
+@media only screen and (max-width: 572px){
+.m572px a,input{
+	display:none;	
+}
+
+#footer-three{
+	display:none;
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+      
+aside{
+	display:none;
+}
+
+main{
+	width:100%;
+}
+ 
+.time{
+	position: absolute;
+   	 top: 15px;
+    	 left:250px;
+	font-size:0.9rem;
+}
+
+.m800px a{
+	display:none;
+}
+
+#footer-one{
+	display:none;
+}
+
+}
+
+
+@media only screen and (max-width: 1100px){
+.heart{
+	 display:none;
+}
+
+.dots{
+	 display:none;
+}
+
+.plus{
+	 display:none;
+}
+
+.dot{
+	 display:none;
+}
+
+.release-details {
+    position: absolute;
+    top: 10px;
+    left:10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size:0.8rem;
+}
+
+}

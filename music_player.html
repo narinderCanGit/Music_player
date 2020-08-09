@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="images//music_icon.jpg" type="image/x-icon" sizes="20x20">
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="music_player.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+</head>
+<body class="animate__animated animate__fadeInDown">
+	
+	<header>
+		<!-- -----------------------------------------navbar--------------------------------------- -->
+		<ul class="no-list-style horizontal-list nav-menu navbar">
+				<li >
+					<img class="nav-icon" src="images//music_icon.jpg" alt="icon">
+					<span id="nav-text"> Music Player</span>
+				</li>
+                <li class="mt-10px m800px">
+                    <a href="genre.html"> Favourites </a>
+                </li> 
+                <li id="bg-font-awesome" class="m572px">
+                	<a href="#"> <i class="fas fa-search"></i> </a>
+                	<input type="text" name="search" id="search_box" placeholder="search...">
+                </li> 
+                <li class="m572px">
+                    <a href="#hindi"> Playlists </a>
+                </li> 
+                <li class="m800px">
+                    <a href="#"> <i class="fas fa-cog"></i> Settings </a>
+                </li>
+                <li class="m800px">
+                    <a href="#notification"> <i class="fas fa-bell"></i> </a>
+                </li> 
+                 <li id="dp">
+					<img class="nav-icon" src="images//dp.jpg" alt="icon">
+				</li>             
+         </ul>
+
+
+          <!-- <div class="navbar">
+         	<div>
+         		<img class="nav-icon" src="images//music_icon.jpg" alt="icon">
+				<span id="nav-head"> Music Player</span>
+				<span id="dp"><img class="nav-icon" src="images//dp.jpg" alt="icon"></span>
+				<span class="nav-text ml-60px"> <a href="genre.html"> Favourites </a> </span>
+				<span class="nav-text"> <a href="#hindi"> Playlists </a> </span>
+				<span class="nav-text">
+					<a href="#"> <i class="fas fa-search fa-sm"></i> </a>
+                	<input type="text" name="search" id="search_box" placeholder="search...">
+				</span>
+				<span class="nav-text"> <a href="#"> <i class="fas fa-cog"></i> Settings </a> </span>
+				<span class="nav-text"> <a href="#notification"> <i class="fas fa-bell"></i> </a> </span>
+				<span class="nav-text ml-60px"> <a href="#"> <i class="fas fa-ellipsis-v"></i> </a> </span>
+         	</div>
+         	
+         </div> -->
+	</header>
+
+<!-- ---------------------super container contains main and aside section------------- -->
+
+	<div class="super-container">              
+	<main>
+<!-- /*----------------genre-----------------------------*/ -->
+		
+		<div class="container-bg">
+<!-- ----------------------container contains row and container-bg is container with background color-------- -->
+<!-- ---------------------------genre-details appears on hover---------------------------- -->
+			<div class="genre_img shadow">
+				<a href="genre.html"> <img  src="images//rock.jpg" alt="Rock Music">
+					<div class="genre-details">
+                		<p>
+                  			Rock Music    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="genre_img shadow">
+				<a href="genre.html"> <img  src="images//folk.jpg" alt="Folk Music">
+					<div class="genre-details">
+                		<p>
+                  			Folk Music    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="genre_img shadow">
+				<a href="genre.html"> <img  src="images//soul.jpg" alt="Soul Music">
+					<div class="genre-details">
+                		<p>
+                  			Soul Music    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="genre_img shadow">
+				<a href="genre.html"> <img  src="images//pop.jpg" alt="Pop Music">
+					<div class="genre-details">
+                		<p>
+                  			Pop Music    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="genre_img shadow">
+				<a href="genre.html"> <img  src="images//hip-hop.jpg" alt="Hip-Hop Music">
+					<div class="genre-details">
+                		<p>
+                  			Hip-Hop Music    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+		</div>
+
+<!-- /*----------------releases-----------------------------*/ -->
+
+		<div>
+
+			<h1 class="section-heading">
+                <span>
+                   <i class="fas fa-music"></i>
+                </span>
+                <span> Latest Releases </span>
+            </h1>
+
+            <div class="container">
+
+			<div class="release_img">
+				<a href="#rock_music"> 
+					<img  src="images//aayat.jpg" alt="Rock Music" >
+					<div class="release-details">
+                		<p>
+                  			- Aayat
+                  			<br>
+                  			- Arijit    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img ">
+				<a href="#folk_music"> <img  src="images//doorie.jpg" alt="Folk Music">
+					<div class="release-details">
+                		<p>
+                  			- Humsafar
+                  			<br>
+                  			- Atif    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#soul_music"> <img  src="images//selena.jpg" alt="Soul Music">
+					<div class="release-details">
+                		<p>
+                  			- Wolves
+                  			<br>
+                  			- selena    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img ">
+				<a href="#pop_music"> <img  src="images//taki.jpg" alt="Pop Music">
+					<div class="release-details">
+                		<p>
+                  			- Taki Taki
+                  			<br>
+                  			- selena    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#hip-hop_music"> <img  src="images//bohemia.jpg" alt="Hip-Hop Music">
+					<div class="release-details">
+                		<p>
+                  			- faqeer
+                  			<br>
+                  			- Bohemia    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+		</div>
+            	
+           
+		</div>
+
+<!-- /*----------------Artists-----------------------------*/ -->
+
+		<h1 class="section-heading">
+                <span>
+                   <i class="fas fa-user"></i>
+                </span>
+                <span> Popular Artists </span>
+            </h1>
+		<div class="container-bg">
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//arijit.jpg" alt="Arijit singh">
+					<div class="artist-details">
+                		<p>
+                  			Arijit   
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//atif.jpg" alt="Atif aslam">
+					<div class="artist-details">
+                		<p>
+                  			Atif
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//ed.jpg" alt="Ed sheeran">
+					<div class="artist-details">
+                		<p>
+                  			Ed sheeran   
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//selena.jpg" alt="Selena gomez">
+					<div class="artist-details">
+                		<p>
+                  			Selena    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//bohemia.jpg" alt="Bohemia">
+					<div class="artist-details">
+                		<p>
+                  			Bohemia    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//bruno.jpg" alt="Bruno Mars">
+					<div class="artist-details">
+                		<p>
+                  			Bruno    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//swift.jpg" alt="Taylor swift">
+					<div class="artist-details">
+                		<p>
+                  			Taylor swift 
+                		</p>
+            		</div>
+				 </a>
+			</div >
+		</div>
+
+<!-- /*----------------albums----------------------------*/ -->
+		
+		<h1 class="section-heading">
+                <span>
+                   <i class="fas fa-compact-disc"></i>
+                </span>
+                <span> Popular Albums </span>
+            </h1>
+		<div class="container-bg">
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//aashiqui.jpg" alt="Aashiqui 2">
+					<div class="artist-details">
+                		<p>
+                  			Aashiqui 2
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//doorie.jpg" alt="doorie">
+					<div class="artist-details">
+                		<p>
+                  			Doorie
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//x.jpg" alt="x">
+					<div class="artist-details">
+                		<p>
+                  			X   
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//revival.jpg" alt="revival">
+					<div class="artist-details">
+                		<p>
+                  			Revival
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//tt.jpg" alt="Thousand thoughts">
+					<div class="artist-details">
+                		<p>
+                  			Thousand thoughts    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//purpose.jpg" alt="purpose">
+					<div class="artist-details">
+                		<p>
+                  			Purpose
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="artist_img">
+				<a href="artists_albums.html"> <img  src="images//fearless.jpg" alt="fearless">
+					<div class="artist-details">
+                		<p>
+                  			Fearless
+                		</p>
+            		</div>
+				 </a>
+			</div >
+		</div>
+
+<!-- /*---------------Hindi Songs------------------*/ -->
+
+		<div id="hindi">
+
+			<h1 class="section-heading">
+                <span>
+                   <i class="fas fa-music"></i>
+                </span>
+                <span> Hindi Songs </span>
+            </h1>
+
+            <div class="container">
+
+			<div class="release_img">
+				<a href="#rock_music"> 
+					<img  src="images//aayat.jpg" alt="Rock Music" >
+					<div class="release-details">
+                		<p>
+                  			- Aayat
+                  			<br>
+                  			- Arijit    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img ">
+				<a href="#folk_music"> <img  src="images//doorie.jpg" alt="Folk Music">
+					<div class="release-details">
+                		<p>
+                  			- Humsafar
+                  			<br>
+                  			- Atif    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#soul_music"> <img  src="images//atif.jpg" alt="Soul Music">
+					<div class="release-details">
+                		<p>
+                  			- Aadat
+                  			<br>
+                  			- Atif    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img ">
+				<a href="#pop_music"> <img  src="images//arijit.jpg" alt="Pop Music">
+					<div class="release-details">
+                		<p>
+                  			- Dil
+                  			<br>
+                  			- Arijit    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#hip-hop_music"> <img  src="images//hasi.jpg" alt="Hip-Hop Music">
+					<div class="release-details">
+                		<p>
+                  			- Hasi
+                  			<br>
+                  			- Shreya    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#hip-hop_music"> <img  src="images//bandeya.jpg" alt="Hip-Hop Music">
+					<div class="release-details">
+                		<p>
+                  			- Bandeya
+                  			<br>
+                  			- Jubain    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+		</div>
+            	
+           
+		</div>
+
+<!-- /*-------------English Songs------------------*/ -->
+
+		<div>
+
+			<h1 class="section-heading">
+                <span>
+                   <i class="fas fa-music"></i>
+                </span>
+                <span> English Songs </span>
+            </h1>
+
+            <div class="container">
+
+			<div class="release_img">
+				<a href="#rock_music"> 
+					<img  src="images//x.jpg" alt="Rock Music" >
+					<div class="release-details">
+                		<p>
+                  			- Photograph
+                  			<br>
+                  			- Ed sheeran    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img ">
+				<a href="#folk_music"> <img  src="images//onecall.jpg" alt="Folk Music">
+					<div class="release-details">
+                		<p>
+                  			- One call away
+                  			<br>
+                  			- Charlie puth    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#soul_music"> <img  src="images//perfect.jpg" alt="Soul Music">
+					<div class="release-details">
+                		<p>
+                  			- Perfect
+                  			<br>
+                  			- Ed sheeran    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img ">
+				<a href="#pop_music"> <img  src="images//oneday.jpg" alt="Pop Music">
+					<div class="release-details">
+                		<p>
+                  			- One day
+                  			<br>
+                  			- Kodaline    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#hip-hop_music"> <img  src="images//young.jpg" alt="Hip-Hop Music">
+					<div class="release-details">
+                		<p>
+                  			- Young dumb
+                  			<br>
+                  			- Khalid    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+
+			<div class="release_img">
+				<a href="#hip-hop_music"> <img  src="images//taki.jpg" alt="Hip-Hop Music">
+					<div class="release-details">
+                		<p>
+                  			- Taki Taki
+                  			<br>
+                  			- Dj snake    
+                		</p>
+            		</div>
+				 </a>
+			</div >
+		</div>
+            	
+           
+		</div>
+
+
+		
+	</main>
+
+
+	<aside>
+		<h6 class="aside-heading">
+                <span>
+                   <i class="fas fa-paperclip"></i>
+                </span>
+                <span> Queue </span>
+        </h6>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//young.jpg" alt="queue">
+				<span class="queue-details">
+               		- Young dumb
+           			<br>
+           			- Khalid   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//oneday.jpg" alt="queue">
+				<span class="queue-details">
+               		- One day
+           			<br>
+           			- Kodaline   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//x.jpg" alt="queue">
+				<span class="queue-details">
+               		- Photograph
+           			<br>
+           			- Ed sheeran   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//perfect.jpg" alt="queue">
+				<span class="queue-details">
+               		- Perfect
+           			<br>
+           			- Ed sheeran   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//aayat.jpg" alt="queue">
+				<span class="queue-details">
+               		- Aayat
+           			<br>
+           			- Arijit  
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//hasi.jpg" alt="queue">
+				<span class="queue-details">
+               		- Hasi
+           			<br>
+           			- Shreya   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//bohemia.jpg" alt="queue">
+				<span class="queue-details">
+               		- Faqeer
+           			<br>
+           			- Bohemia   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//taki.jpg" alt="queue">
+				<span class="queue-details">
+               		- Taki taki
+           			<br>
+           			- Dj snake   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//bandeya.jpg" alt="queue">
+				<span class="queue-details">
+               		- Bandeya
+           			<br>
+           			- Jubain   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//selena.jpg" alt="queue">
+				<span class="queue-details">
+               		- Wolves
+           			<br>
+           			- Selena   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//onecall.jpg" alt="queue">
+				<span class="queue-details">
+               		- One call away
+           			<br>
+           			- Charlie puth   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+		<div class="queue_img">
+			<a href="#"> <img  src="images//doorie.jpg" alt="queue">
+				<span class="queue-details">
+               		- Aadat
+           			<br>
+           			- atif   
+                </span>
+            </a>
+                <span class="heart">
+                	<i class="far fa-heart fa-xs"></i>
+                </span>
+                <span class="dots">
+                	<a href="#"> <i class="fas fa-ellipsis-h fa-xs"></i> </a>
+                </span>
+		</div>
+
+	</aside>
+
+	</div>
+
+  <!-- ----------------------------Music controller------------------------------	 -->
+
+  	<footer>
+  <!-- -----------------------------------img part------------------------------------ -->
+  		<div id="footer-one">
+  			<img class="footer-img" src="images//aayat.jpg" alt="...">
+  			<span class="footer-img-details">
+  				<b>Aayat</b>
+  				<br>
+  				Arijit Singh
+  			</span>
+  			<span class="footer-one-heart"><i class="far fa-heart fa-xs"></i></span>
+  		</div>
+
+ <!-- -----------------------------------controller part------------------------------------ -->
+
+  		<div id="footer-two">
+  		<div>
+  			<span class="ml-10px"><i class="fas fa-random fa-xs"></i></span>
+  			<span class="ml-10px"><i class="fas fa-backward fa-xs"></i></span>
+  			<span class="ml-10px"><i class="far fa-pause-circle"></i></span>	
+  			<span class="ml-10px"><i class="fas fa-forward fa-xs"></i></span>
+  			<span class="ml-10px"><i class="fas fa-redo-alt fa-xs"></i></span>
+  		</div>
+
+  		<div>
+  				<span class="footer-time"> 1:07 </span>
+  				<div class="line"> </div>
+  				<div class="circle"> </div>
+  				<div class="line2"> </div>
+  				<span  class="footer-time"> 4:34 </span>
+  		</div>
+  		</div>
+
+<!-- -----------------------------------volume part------------------------------------ -->
+
+  		<div id="footer-three">
+  			<div>
+  				<span class="ml-10px"> <i class="fas fa-volume-mute fa-xs"></i> </span>
+  				<span class="ml-10px"> <i class="fas fa-sliders-h fa-xs"></i> </span>
+  				<span class="ml-10px"> <i class="fas fa-volume-up fa-xs"></i> </span>
+  			</div>
+
+  			<div>
+  				<div class="vol-line"> </div>
+  				<div class="vol-circle"> </div>
+  				<div class="vol-line2"> </div>
+  			</div>
+  			
+  		</div>
+
+  	</footer>
+
+
+</body>
+</html>
